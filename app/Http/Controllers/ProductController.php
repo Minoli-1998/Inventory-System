@@ -14,7 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::latest()->paginate(100);
+        $products = Product::latest()->paginate(5); 
         return view('products.index',compact('products'))->with(request()->input('page'));
     }
 
@@ -65,7 +65,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('products.show',compact('product'));
     }
 
     /**
