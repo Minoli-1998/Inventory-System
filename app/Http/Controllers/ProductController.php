@@ -76,7 +76,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('products.edit',compact('product'));
     }
 
     /**
@@ -88,7 +88,25 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        // validate the input
+        $request->validate([
+            'item_name'=>'required',
+            'category'=>'required',
+            'quantity_on_hand'=>'required',
+            'reorder_level'=>'required',
+            'minimum_level'=>'required',
+            'maximum_level'=>'required',
+            'supplier_name'=>'required',
+            'contact'=>'required',
+            'unit_cost'=>'required',
+            'total_value'=>'required',
+        ]);
+
+        // update the product information
+        $product->update($request->all());
+
+        // redirect
+        return redirect()->route('products.index')->with('success','Product updated successfully');
     }
 
     /**
