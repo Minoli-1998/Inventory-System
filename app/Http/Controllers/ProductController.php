@@ -38,16 +38,16 @@ class ProductController extends Controller
     {
         // validate the input
         $request->validate([
-            'item-name'=>'required',
+            'item_name'=>'required',
             'category'=>'required',
-            'quantity-on-hand'=>'required',
-            'reorder-level'=>'required',
-            'minimum-level'=>'required',
-            'maximum-level'=>'required',
-            'supplier-name'=>'required',
+            'quantity_on_hand'=>'required',
+            'reorder_level'=>'required',
+            'minimum_level'=>'required',
+            'maximum_level'=>'required',
+            'supplier_name'=>'required',
             'contact'=>'required',
-            'unit-cost'=>'required',
-            'total-value'=>'required',
+            'unit_cost'=>'required',
+            'total_value'=>'required',
         ]);
 
         // create a new product in the database

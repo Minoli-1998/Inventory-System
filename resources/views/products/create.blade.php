@@ -26,8 +26,8 @@
         <fieldset>
             <h3>Product Information</h3>
             <div class="form-group mb-2">
-                <label for="item-name">Item Name</label>
-                <input type="text" name="item-name" class="form-control" placeholder="Item Name">
+                <label for="item_name">Item Name</label>
+                <input type="text" name="item_name" class="form-control" placeholder="Item Name">
             </div>
             <div class="form-group mb-2">
                 <label for="category">Category</label>
@@ -39,20 +39,20 @@
         <fieldset style="display: none;">
             <h3>Stock Levels</h3>
             <div class="form-group mb-2">
-                <label for="stock-levels">Quantity</label>
-                <input type="number" name="quantity-on-hand" class="form-control" placeholder="Quantity">
+                <label for="quantity_on_hand">Quantity</label>
+                <input type="number" name="quantity_on_hand" class="form-control" placeholder="Quantity">
             </div>
             <div class="form-group mb-2">
-                <label for="reorder-level">Reorder Level</label>
-                <input type="number" name="reorder-level" class="form-control" placeholder="Reorder Level">
+                <label for="reorder_level">Reorder Level</label>
+                <input type="number" name="reorder_level" class="form-control" placeholder="Reorder Level">
             </div>
             <div class="form-group mb-2">
-                <label for="minimum-level">Minimum Level</label>
-                <input type="number" name="minimum-level" class="form-control" placeholder="Minimum Level">
+                <label for="minimum_level">Minimum Level</label>
+                <input type="number" name="minimum_level" class="form-control" placeholder="Minimum Level">
             </div>
             <div class="form-group mb-2">
-                <label for="maximum-level">Maximum Level</label>
-                <input type="number" name="maximum-level" class="form-control" placeholder="Maximum Level">
+                <label for="maximum_level">Maximum Level</label>
+                <input type="number" name="maximum_level" class="form-control" placeholder="Maximum Level">
             </div>
             <input type="button" name="previous" class="previous btn btn-secondary" value="Previous" />
             <input type="button" name="next" class="next btn btn-info" value="Next" />
@@ -61,16 +61,16 @@
         <fieldset style="display: none;">
             <h3>Supplier Information</h3>
             <div class="form-group mb-2">
-                <label for="supplier-name">Name</label>
-                <input type="text" name="supplier-name" class="form-control" placeholder="Name">
+                <label for="supplier_name">Name</label>
+                <input type="text" name="supplier_name" class="form-control" placeholder="Name">
             </div>
             <div class="form-group mb-2">
                 <label for="contact">Contact</label>
                 <input type="tel" name="contact" class="form-control" placeholder="Contact">
             </div>
             <div class="form-group mb-2">
-                <label for="lead-time">Lead Time</label>
-                <input type="time" name="lead-time" class="form-control" placeholder="Lead Time">
+                <label for="lead_time">Lead Time</label>
+                <input type="time" name="lead_time" class="form-control" placeholder="Lead Time">
             </div>
             <input type="button" name="previous" class="previous btn btn-secondary" value="Previous" />
             <input type="button" name="next" class="next btn btn-info" value="Next" />
@@ -79,12 +79,12 @@
         <fieldset style="display: none;">
             <h3>Cost Information</h3>
             <div class="form-group mb-2">
-                <label for="price">Price</label>
-                <input type="number" name="unit-cost" class="form-control" placeholder="Price">
+                <label for="unit_cost">Price</label>
+                <input type="number" name="unit_cost" class="form-control" placeholder="Price">
             </div>
             <div class="form-group mb-2">
-                <label for="total-value">Total Value</label>
-                <input type="number" name="total-value" class="form-control" placeholder="Total Value">
+                <label for="total_value">Total Value</label>
+                <input type="number" name="total_value" class="form-control" placeholder="Total Value">
             </div>
             <input type="button" name="previous" class="previous btn btn-secondary" value="Previous" />
             <input type="submit" class="btn btn-success" value="Submit" />
