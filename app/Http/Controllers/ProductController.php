@@ -35,7 +35,25 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // validate the input
+        $request->validate([
+            'item-name'=>'required',
+            'category'=>'required',
+            'quantity-on-hand'=>'required',
+            'reorder-level'=>'required',
+            'minimum-level'=>'required',
+            'maximum-level'=>'required',
+            'supplier-name'=>'required',
+            'contact'=>'required',
+            'unit-cost'=>'required',
+            'total-value'=>'required',
+        ]);
+
+        // create a new product in the database
+        Product::create($request->all());
+
+        // redirect the user 
+        return redirect()->route('products.index')->with('success','Product created successfully');
     }
 
     /**
