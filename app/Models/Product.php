@@ -9,15 +9,15 @@ class Product extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'item-name',
+        'item_name',
         'category',
-        'quantity-on-hand',
-        'reorder-level',
-        'minimum-level',
-        'maximum-level',
-        'supplier-name',
+        'quantity_on_hand',
+        'reorder_level',
+        'minimum_level',
+        'maximum_level',
+        'supplier_name',
         'contact',
-        'unit-cost',
-        'total-value',
+        'unit_cost',
+        'total_value',
     ];
 }
