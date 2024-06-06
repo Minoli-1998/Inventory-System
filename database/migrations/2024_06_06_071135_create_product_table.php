@@ -15,16 +15,16 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('item-name');
+            $table->string('item_name');
             $table->string('category');
-            $table->decimal('quantity-on-hand');
-            $table->decimal('reorder-level');
-            $table->decimal('minimum-level');
-            $table->decimal('maximum-level');
-            $table->string('supplier-name');
+            $table->decimal('quantity_on_hand');
+            $table->decimal('reorder_level');
+            $table->decimal('minimum_level');
+            $table->decimal('maximum_level');
+            $table->string('supplier_name');
             $table->string('contact');
-            $table->float('unit-cost');
-            $table->float('total-value');
+            $table->float('unit_cost');
+            $table->float('total_value');
             $table->timestamps();
         });
     }
