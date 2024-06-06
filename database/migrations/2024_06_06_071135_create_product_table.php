@@ -19,6 +19,12 @@ return new class extends Migration
             $table->string('category');
             $table->decimal('quantity-on-hand');
             $table->decimal('reorder-level');
+            $table->decimal('minimum-level');
+            $table->decimal('maximum-level');
+            $table->string('supplier-name');
+            $table->string('contact');
+            $table->float('unit-cost');
+            $table->float('total-value');
             $table->timestamps();
         });
     }
