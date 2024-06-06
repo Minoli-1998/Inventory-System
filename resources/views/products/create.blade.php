@@ -40,7 +40,7 @@
             <h3>Stock Levels</h3>
             <div class="form-group mb-2">
                 <label for="stock-levels">Quantity</label>
-                <input type="number" name="quantity" class="form-control" placeholder="Quantity">
+                <input type="number" name="quantity-on-hand" class="form-control" placeholder="Quantity">
             </div>
             <div class="form-group mb-2">
                 <label for="reorder-level">Reorder Level</label>
@@ -80,7 +80,7 @@
             <h3>Cost Information</h3>
             <div class="form-group mb-2">
                 <label for="price">Price</label>
-                <input type="number" name="price" class="form-control" placeholder="Price">
+                <input type="number" name="unit-cost" class="form-control" placeholder="Price">
             </div>
             <div class="form-group mb-2">
                 <label for="total-value">Total Value</label>
